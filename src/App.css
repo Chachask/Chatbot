@@ -1,0 +1,83 @@
+    #container{
+        width: 600px;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+        
+        
+    }
+    .display-con{
+      width: 80%;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 10px;
+        align-items: center;
+       
+    }
+
+   .display{
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+  
+   }
+   input{
+    flex-grow: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius:15px ;
+    border:1px solid black;
+
+   }
+   h2{
+    text-align: center;
+   }
+   button{
+    padding :15px;
+    background: green;
+    border: none;
+    border-radius: 15px;
+   }
+   .message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 60px;
+}
+.messageList{
+    flex-grow: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+   overflow-y: auto;
+    min-height: 0;}
+
+.robot-message {
+    flex-direction: row;         /* avatar left, bubble right */
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.user-message {
+    flex-direction: row; /* avatar right, bubble left */
+    justify-content: flex-end;
+}
+
+.bubble {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+}
+
+.robot-message .bubble {
+    background: #e5e7eb; /* light gray */
+}
+
+.user-message .bubble {
+    background: green; /* green */
+    color: white;
+}

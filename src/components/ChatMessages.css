@@ -1,0 +1,10 @@
+.messageList{
+    width: 100%;
+    flex-grow: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+   /*overflow-y: auto;
+    min-height: 0;*/}
+    h2{
+    text-align: center;
+   }

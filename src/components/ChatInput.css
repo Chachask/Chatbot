@@ -1,0 +1,27 @@
+.display-con{
+      width: 80%;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 10px;
+        align-items: center;  
+    }
+   .display{
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+  
+   }
+   input{
+    flex-grow: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius:15px ;
+    border:1px solid black;
+
+   }
+   button{
+    padding :15px;
+    background: green;
+    border: none;
+    border-radius: 15px;
+   }
