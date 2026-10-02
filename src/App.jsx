@@ -11,6 +11,7 @@ import './App.css'
  function App(){
             const [chatMessages, setChatMessages] = useState([])
             const [isLoading, setIsLoading] = useState(false);
+            const [savedMessages, setSavedMessages] = useState ('')
 
              useEffect(() => {
                  Chatbot.addResponses({
@@ -22,6 +23,12 @@ import './App.css'
                                          return new Date().toLocaleTimeString()}
                 })
              }, [])
+             useEffect(() => {
+               localStorage.setItem('messages', JSON.stringify(chatMessages))
+               setSavedMessages(JSON.parse(localStorage.getItem('messages')) || "")
+               
+             }, [chatMessages])
+             
             
         
             
